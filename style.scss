@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+/* --------------------------------------
+Public
+----------------------------------------- */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* --------------------------------------
+pc_header sp_header
+----------------------------------------- */
+
+#pc_header,
+#sp_header {
+  position: relative;
+  z-index: 20;
+}
+
+#pc_header {
+  width: 100%;
+  height: 61px;
+  background: url(bg.png) top center no-repeat #000;
+
+  > div {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 61px;
+    background: url(nbo.jpg) top left no-repeat;
+
+    .nbo_header {
+      position: absolute;
+      top: 11px;
+      right: 12px;
+      overflow: hidden;
+      width: 283px;
+      height: 35px;
+
+      img {
+        position: absolute;
+        top: -11px;
+        right: -12px;
+        display: block;
+      }
+    }
+  }
+}
+
+#sp_header {
+  display: none;
+  padding: 5px 0;
+  width: 100%;
+  height: 30px;
+  background: #000;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    width: 92px;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .ttl_small {
+    font-size: 22px !important;
+  }
+
+  .ttl_smalls {
+    font-size: 16px !important;
+  }
+
+  .ttl_small_pc {
+    font-size: 18px !important;
+  }
+
+  .pc_mb_0 {
+    margin-bottom: 0 !important;
+  }
+
+  .pc_mt_70 {
+    margin-top: 70px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ttl_small {
+    font-size: 14px !important;
+  }
+
+  .ttl_smalls {
+    font-size: 10px !important;
+  }
+
+  .sp_small {
+    font-size: 10px !important;
+  }
+
+  #pc_header {
+    display: none;
+  }
+
+  #sp_header {
+    display: block;
+  }
+}
+
+/* --------------------------------------
+ここから
+----------------------------------------- */
+.top {
+  width: 100%;
+  height: 210px;
+  background-color: #cccccc;
+}
+.lead {
+      // max-width: 640px;
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: #009d80;
+      padding: 30px;
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #ffff;
+      }
+  }
+main {
+  background-color: #e5f1d3;
+  padding-top:20px ;
+.main{
+    max-width: 800px;
+    margin: 0 5%;
+    background-color: #ffff;
+.inner {
+  margin: 0 auto;
+  h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px ;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+  }
+  .fig {
+    margin: 2rem 0;
+  .img {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ff9;
+    height: 200px;
+  }
+  figcaption {
+    font-size: 14px;
+  }
+}
+}
+}
+}
+.next {
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(167, 253, 169, 0.36);
+  margin: 0 auto;
+  a {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+}
+// 2ページ目
+.contact {
+  .logo {
+    width: 300px;
+    height: 100px;
+    background-color: #ff9;
+    margin:  0 auto;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media screen and(min-width:641px) {
+  .only_sp {
+    display: none;
+  }
+  .only_pc {
+    display: block;
+  }
+  p {
+    font-size: 16px;
+  }
+  .top {
+    max-width: 1200px;
+    height: 475px;
+    margin: 0 auto;
+    background-color: #cccccc;
+  }
+  .lead {
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+  main {
+  .main{
+    width: 90%;
+    margin: 0 auto; 
+}
+}
+.next {
+  a {
+    font-size: 2vw;
+    font-weight: bold;
+  }
+}
+}
